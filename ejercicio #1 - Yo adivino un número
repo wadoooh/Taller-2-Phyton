@@ -5,7 +5,7 @@ intentos = 0
 adivinado = False
 
 print("Adivina el número entre 1 y 100.")
-
+//Ingresar unicamente valores del 1 al 100.
 while not adivinado:
     intentos += 1
     intento = int(input("Intento {}: ".format(intentos)))
