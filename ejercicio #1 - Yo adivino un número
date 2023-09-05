@@ -1,6 +1,6 @@
 import random
 
-numeroAleatorio = random.randint(1, 100)
+numeroAleatorio = random.randrange(101)
 intentos = 0
 adivinado = False
 
@@ -19,4 +19,4 @@ while not adivinado:
             print("Es menor que {}.".format(intento))
         else:
             adivinado = True
-            print("Correcto. Adivinaste en {} intentos.")
+            print("Correcto. Adivinaste en {} intentos.".format(intentos))
