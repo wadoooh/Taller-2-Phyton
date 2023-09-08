@@ -1,1 +1,14 @@
+total_time = 0
 
+while True:
+    tramo_time = int(input('Duracion tramo: '))
+    
+    if tramo_time == 0:
+        break
+    
+    total_time += tramo_time
+
+hours = total_time // 60
+minutes = total_time % 60
+
+print(f'Tiempo total de viaje: {hours}:{minutes} horas')
