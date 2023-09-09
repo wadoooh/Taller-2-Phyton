@@ -1,1 +1,15 @@
 
+def es_palindromo(numero):
+    numero_str = str(numero)
+    
+    if numero_str == numero_str[::-1]:
+        return True
+    else:
+        return False
+
+numero = int(input("Ingrese un número: "))
+
+if es_palindromo(numero):
+    print(f"{numero} es un palíndromo.")
+else:
+    print(f"{numero} no es un palíndromo.")
