@@ -1,1 +1,16 @@
-
+def guessNumber():
+    lower = 1
+    upper = 100
+    while True:
+        guess = (lower + upper) // 2
+        print(f"Intento: {guess}")
+        user_input = input("Ingrese <, > o =: ")
+        if user_input == "<":
+            upper = guess - 1
+        elif user_input == ">":
+            lower = guess + 1
+        elif user_input == "=":
+            print("¡Adiviné correctamente!")
+            break
+        else:
+            print("Entrada inválida. Por favor, ingresa <, > o =.")
